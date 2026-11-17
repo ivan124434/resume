@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Костюченко Иван — Резюме</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.6;
+  }
+  .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+
+  header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    border-radius: 16px;
+    margin-bottom: 30px;
+    border: 1px solid #334155;
+  }
+  header h1 { font-size: 2.2em; color: #38bdf8; margin-bottom: 8px; }
+  header .subtitle { color: #94a3b8; font-size: 1.1em; }
+  header .salary {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 6px 16px;
+    background: #1e293b;
+    border: 1px solid #38bdf8;
+    border-radius: 20px;
+    color: #38bdf8;
+    font-size: 0.95em;
+  }
+
+  section {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 24px;
+  }
+  section h2 {
+    color: #38bdf8;
+    font-size: 1.4em;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #334155;
+  }
+
+  .info-row { margin-bottom: 10px; }
+  .info-row b { color: #cbd5e1; }
+
+  .skills-group { margin-bottom: 18px; }
+  .skills-group h3 {
+    color: #94a3b8;
+    font-size: 1em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag {
+    background: #0f172a;
+    border: 1px solid #475569;
+    color: #e2e8f0;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 0.9em;
+  }
+
+  .portfolio-item {
+    background: #0f172a;
+    border: 1px dashed #475569;
+    border-radius: 10px;
+    padding: 16px;
+    color: #94a3b8;
+    text-align: center;
+  }
+
+  .contact-link {
+    display: inline-block;
+    margin: 4px 8px 4px 0;
+    padding: 10px 20px;
+    background: #38bdf8;
+    color: #0f172a;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.2s;
+  }
+  .contact-link:hover { background: #0ea5e9; }
+
+  footer {
+    text-align: center;
+    color: #64748b;
+    font-size: 0.9em;
+    padding: 20px 0;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>Костюченко Иван Александрович</h1>
+    <p class="subtitle">Frontend / Backend разработчик · 20 лет</p>
+    <span class="salary">Желаемая зарплата: 60 000 ₽</span>
+  </header>
+
+  <section>
+    <h2>Обо мне</h2>
+    <p>Начинающий fullstack-разработчик со знанием PHP, JavaScript и C#. Обучаюсь по специальности
+    «Информационные системы и программирование» (СПО 09.02.07). Разрабатываю веб-приложения
+    на Yii2 и Laravel, работаю с REST API и реляционными базами данных. Осваиваю фронтенд
+    на Vue.js и бэкенд на Node.js и ASP.NET.</p>
+  </section>
+
+  <section>
+    <h2>Навыки</h2>
+
+    <div class="skills-group">
+      <h3>Языки программирования</h3>
+      <div class="tags">
+        <span class="tag">PHP</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">C#</span>
+      </div>
+    </div>
+
+    <div class="skills-group">
+      <h3>Фреймворки и библиотеки</h3>
+      <div class="tags">
+        <span class="tag">Yii2</span>
+        <span class="tag">Laravel</span>
+        <span class="tag">Vue.js</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">ASP.NET</span>
+      </div>
+    </div>
+
+    <div class="skills-group">
+      <h3>Веб-технологии</h3>
+      <div class="tags">
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">REST API</span>
+      </div>
+    </div>
+
+    <div class="skills-group">
+      <h3>Инструменты разработчика</h3>
+      <div class="tags">
+        <span class="tag">Git</span>
+        <span class="tag">Docker</span>
+        <span class="tag">Composer</span>
+        <span class="tag">Командная строка</span>
+      </div>
+    </div>
+
+    <div class="skills-group">
+      <h3>Базы данных</h3>
+      <div class="tags">
+        <span class="tag">MySQL</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">SQLite</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Образование</h2>
+    <div class="info-row"><b>СПО 09.02.07</b> — «Информационные системы и программирование»</div>
+    <div class="info-row"><b>Изучаемые дисциплины:</b> ООП, Базы данных, Компьютерные сети</div>
+    <div class="info-row" style="margin-top:14px;">
+      <b>Тема дипломной работы:</b> Разработка информационной системы «Продажа смартфонов и часов»
+      с помощью Yii 2.0 Advanced и API на платформе Ubuntu 25.04
+    </div>
+  </section>
+
+  <section>
+    <h2>Портфолио / Мои сайты</h2>
+    <div class="portfolio-item">
+      Скоро здесь появятся ссылки на мои проекты 🚀
+    </div>
+  </section>
+
+  <section>
+    <h2>Контакты</h2>
+    <a class="contact-link" href="https://t.me/DreamWaveUWU" target="_blank">Telegram: @DreamWaveUWU</a>
+  </section>
+
+  <footer>
+    © 2026 Костюченко Иван Александрович
+  </footer>
+
+</div>
+</body>
+</html>
